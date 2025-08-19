@@ -1,0 +1,3 @@
+com.justtype.nativeapp.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

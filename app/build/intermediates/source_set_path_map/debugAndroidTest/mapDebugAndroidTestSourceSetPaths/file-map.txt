@@ -1,0 +1,5 @@
+com.justtype.nativeapp.test.app-jetified-core-1.6.1-0 /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/562b617d864750e1d74c02cb1d6ab1a4/transformed/jetified-core-1.6.1/res
+com.justtype.nativeapp.test.app-androidTest-1 /Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/build/generated/res/resValues/androidTest/debug
+com.justtype.nativeapp.test.app-mergeDebugAndroidTestResources-2 /Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.justtype.nativeapp.test.app-mergeDebugAndroidTestResources-3 /Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.justtype.nativeapp.test.app-debugAndroidTest-4 /Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
