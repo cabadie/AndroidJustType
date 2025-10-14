@@ -4,7 +4,6 @@ package com.justtype.nativeapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
@@ -14,6 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.justtype.nativeapp.R;
+import com.justtype.nativeapp.ui.SquareButton;
+import com.justtype.nativeapp.ui.SquareTextView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,31 +27,31 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView ambigText;
 
   @NonNull
-  public final Button btn0;
+  public final SquareButton btn0;
 
   @NonNull
-  public final Button btn1;
+  public final SquareButton btn1;
 
   @NonNull
-  public final Button btn2;
+  public final SquareButton btn2;
 
   @NonNull
-  public final Button btn3;
+  public final SquareButton btn3;
 
   @NonNull
-  public final Button btn4;
+  public final SquareButton btn4;
 
   @NonNull
-  public final Button btn5;
+  public final SquareButton btn5;
 
   @NonNull
-  public final Button btn6;
+  public final SquareButton btn6;
 
   @NonNull
-  public final Button btn7;
+  public final SquareButton btn7;
 
   @NonNull
-  public final TextView centerLabel;
+  public final SquareTextView centerLabel;
 
   @NonNull
   public final GridLayout keyGrid;
@@ -65,10 +66,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView selectionList;
 
   private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull TextView ambigText,
-      @NonNull Button btn0, @NonNull Button btn1, @NonNull Button btn2, @NonNull Button btn3,
-      @NonNull Button btn4, @NonNull Button btn5, @NonNull Button btn6, @NonNull Button btn7,
-      @NonNull TextView centerLabel, @NonNull GridLayout keyGrid, @NonNull ImageButton menuButton,
-      @NonNull TextView outputText, @NonNull TextView selectionList) {
+      @NonNull SquareButton btn0, @NonNull SquareButton btn1, @NonNull SquareButton btn2,
+      @NonNull SquareButton btn3, @NonNull SquareButton btn4, @NonNull SquareButton btn5,
+      @NonNull SquareButton btn6, @NonNull SquareButton btn7, @NonNull SquareTextView centerLabel,
+      @NonNull GridLayout keyGrid, @NonNull ImageButton menuButton, @NonNull TextView outputText,
+      @NonNull TextView selectionList) {
     this.rootView = rootView;
     this.ambigText = ambigText;
     this.btn0 = btn0;
@@ -120,55 +122,55 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.btn0;
-      Button btn0 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn0 = ViewBindings.findChildViewById(rootView, id);
       if (btn0 == null) {
         break missingId;
       }
 
       id = R.id.btn1;
-      Button btn1 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn1 = ViewBindings.findChildViewById(rootView, id);
       if (btn1 == null) {
         break missingId;
       }
 
       id = R.id.btn2;
-      Button btn2 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn2 = ViewBindings.findChildViewById(rootView, id);
       if (btn2 == null) {
         break missingId;
       }
 
       id = R.id.btn3;
-      Button btn3 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn3 = ViewBindings.findChildViewById(rootView, id);
       if (btn3 == null) {
         break missingId;
       }
 
       id = R.id.btn4;
-      Button btn4 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn4 = ViewBindings.findChildViewById(rootView, id);
       if (btn4 == null) {
         break missingId;
       }
 
       id = R.id.btn5;
-      Button btn5 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn5 = ViewBindings.findChildViewById(rootView, id);
       if (btn5 == null) {
         break missingId;
       }
 
       id = R.id.btn6;
-      Button btn6 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn6 = ViewBindings.findChildViewById(rootView, id);
       if (btn6 == null) {
         break missingId;
       }
 
       id = R.id.btn7;
-      Button btn7 = ViewBindings.findChildViewById(rootView, id);
+      SquareButton btn7 = ViewBindings.findChildViewById(rootView, id);
       if (btn7 == null) {
         break missingId;
       }
 
       id = R.id.centerLabel;
-      TextView centerLabel = ViewBindings.findChildViewById(rootView, id);
+      SquareTextView centerLabel = ViewBindings.findChildViewById(rootView, id);
       if (centerLabel == null) {
         break missingId;
       }

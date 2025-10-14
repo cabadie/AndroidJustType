@@ -26,7 +26,7 @@
         android:id="@+id/outputText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="4"
         android:background="#FFFFFF"
         android:gravity="start|top"
         android:padding="8dp"
@@ -48,7 +48,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
+        android:layout_weight="3"
         android:padding="10dp">
 
         <GridLayout
@@ -58,41 +58,55 @@
             android:layout_weight="1"
             android:rowCount="3"
             android:columnCount="3"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
             android:useDefaultMargins="true">
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn0"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                 android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                 android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                 android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <TextView
+            <com.justtype.nativeapp.ui.SquareTextView
                 android:id="@+id/centerLabel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -100,38 +114,49 @@
                 android:layout_rowWeight="1"
                 android:gravity="center"
                 android:textSize="18sp"/>
-
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                 android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                 android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                 android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
-            <Button
+            <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:textSize="18sp"/>
+                android:background="@drawable/button_background"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="8dp"/>
 
         </GridLayout>
 

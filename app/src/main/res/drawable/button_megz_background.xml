@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background image with white background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- Background image -->
+    <item android:top="3dp" android:left="3dp" android:right="3dp" android:bottom="3dp">
+        <bitmap
+            android:src="@drawable/all_background"
+            android:gravity="fill" />
+    </item>
+    
+    <!-- Border overlay -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="3dp"
+                android:color="#000000" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>
