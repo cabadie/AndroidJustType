@@ -3000,6 +3000,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_back_black_24
+drawable ic_back
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3014,11 +3015,13 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_menu
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable ic_settings
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3041,6 +3044,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable menu_24
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3162,6 +3166,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3183,6 +3188,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3337,7 +3343,6 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id keyGrid
-id keyHistory
 id labeled
 id layout
 id left
@@ -3374,6 +3379,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id menuButton
 id message
 id middle
 id mini
@@ -3502,9 +3508,12 @@ id selection_type
 id sharedValueSet
 id sharedValueUnset
 id shortcut
+id showButtonsPressedLayout
+id showButtonsPressedSwitch
 id showCustom
 id showHome
 id showTitle
+id showWordFrequenciesSwitch
 id sin
 id skipCollapsed
 id skipped
@@ -3604,6 +3613,7 @@ id west
 id withText
 id with_icon
 id withinBounds
+id wordFrequenciesLayout
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -3724,6 +3734,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3803,6 +3814,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

@@ -22,7 +22,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="JustType"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" >
         <activity
             android:name="com.justtype.nativeapp.MainActivity"
@@ -32,6 +31,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.justtype.nativeapp.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName="com.justtype.nativeapp.MainActivity" >
         </activity>
 
         <provider

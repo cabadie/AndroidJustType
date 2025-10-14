@@ -1,16 +1,22 @@
 package com.justtype.nativeapp
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.PopupMenu
 import com.justtype.nativeapp.logic.JTUI
 import java.util.Locale
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var jtui: JTUI
     private var tts: TextToSpeech? = null
+    private lateinit var ambigTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +25,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         tts = TextToSpeech(this, this)
 
         val outputText: TextView = findViewById(R.id.outputText)
-        val ambigText: TextView = findViewById(R.id.ambigText)
+        ambigTextView = findViewById(R.id.ambigText)
         val selectionList: TextView = findViewById(R.id.selectionList)
-        val keyHistory: TextView = findViewById(R.id.keyHistory)
         val centerLabel: TextView = findViewById(R.id.centerLabel)
 
         val buttons = listOf(
@@ -40,9 +45,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             onUiUpdate = { ui ->
                 runOnUiThread {
                     outputText.text = ui.outputBuffer
-                    ambigText.text = ui.ambigBuffer
+                    ambigTextView.text = ui.ambigBuffer
                     selectionList.text = ui.selectionListBuffer
-                    keyHistory.text = ui.keyHistoryBuffer
                     centerLabel.text = ui.centerSpace
                     buttons.forEachIndexed { index, button ->
                         button.text = ui.keyLabels.getOrNull(index) ?: ""
@@ -57,6 +61,42 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         buttons.forEachIndexed { index, button ->
             button.setOnClickListener { jtui.buttonPressed(index) }
         }
+        
+        // Setup hamburger menu button
+        val menuButton: ImageButton = findViewById(R.id.menuButton)
+        menuButton.setOnClickListener { view ->
+            val popup = PopupMenu(this, view)
+            popup.menuInflater.inflate(R.menu.main_menu, popup.menu)
+            popup.setOnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    R.id.action_settings -> {
+                        val intent = Intent(this, SettingsActivity::class.java)
+                        startActivity(intent)
+                        true
+                    }
+                    else -> false
+                }
+            }
+            popup.show()
+        }
+        
+        // Load and apply preference
+        loadAndApplyPreferences()
+    }
+    
+    override fun onResume() {
+        super.onResume()
+        // Reload preferences when returning from settings
+        loadAndApplyPreferences()
+    }
+    
+    private fun loadAndApplyPreferences() {
+        val prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE)
+        val showWordFrequencies = prefs.getBoolean(SettingsActivity.KEY_SHOW_WORD_FREQUENCIES, false)
+        jtui.showWordFrequencies = showWordFrequencies
+        
+        val showButtonsPressed = prefs.getBoolean(SettingsActivity.KEY_SHOW_BUTTONS_PRESSED, false)
+        ambigTextView.visibility = if (showButtonsPressed) View.VISIBLE else View.GONE
     }
 
     private fun speak(text: String) {

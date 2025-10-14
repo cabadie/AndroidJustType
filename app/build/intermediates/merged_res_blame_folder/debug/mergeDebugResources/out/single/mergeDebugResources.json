@@ -1,62 +1,94 @@
 [
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.justtype.nativeapp-main-33:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/menu_main_menu.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/menu/main_menu.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.justtype.nativeapp-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_menu.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_menu.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_settings.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_settings.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_back.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_menu_24.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/menu_24.xml"
     },
     {
         "merged": "com.justtype.nativeapp-debug-31:/layout_activity_main.xml.flat",
         "source": "com.justtype.nativeapp-main-33:/layout/activity_main.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_menu_24px.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/menu_24px.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/layout_activity_settings.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.justtype.nativeapp-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.justtype.nativeapp-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/layout_activity_main.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
     }
 ]

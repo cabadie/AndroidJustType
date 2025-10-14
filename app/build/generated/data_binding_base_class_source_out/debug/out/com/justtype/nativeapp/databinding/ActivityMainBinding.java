@@ -6,7 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridLayout;
-import android.widget.LinearLayout;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final TextView ambigText;
@@ -55,7 +56,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final GridLayout keyGrid;
 
   @NonNull
-  public final TextView keyHistory;
+  public final ImageButton menuButton;
 
   @NonNull
   public final TextView outputText;
@@ -63,10 +64,10 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView selectionList;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull TextView ambigText,
+  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull TextView ambigText,
       @NonNull Button btn0, @NonNull Button btn1, @NonNull Button btn2, @NonNull Button btn3,
       @NonNull Button btn4, @NonNull Button btn5, @NonNull Button btn6, @NonNull Button btn7,
-      @NonNull TextView centerLabel, @NonNull GridLayout keyGrid, @NonNull TextView keyHistory,
+      @NonNull TextView centerLabel, @NonNull GridLayout keyGrid, @NonNull ImageButton menuButton,
       @NonNull TextView outputText, @NonNull TextView selectionList) {
     this.rootView = rootView;
     this.ambigText = ambigText;
@@ -80,14 +81,14 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btn7 = btn7;
     this.centerLabel = centerLabel;
     this.keyGrid = keyGrid;
-    this.keyHistory = keyHistory;
+    this.menuButton = menuButton;
     this.outputText = outputText;
     this.selectionList = selectionList;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -178,9 +179,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.keyHistory;
-      TextView keyHistory = ViewBindings.findChildViewById(rootView, id);
-      if (keyHistory == null) {
+      id = R.id.menuButton;
+      ImageButton menuButton = ViewBindings.findChildViewById(rootView, id);
+      if (menuButton == null) {
         break missingId;
       }
 
@@ -196,8 +197,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, ambigText, btn0, btn1, btn2, btn3,
-          btn4, btn5, btn6, btn7, centerLabel, keyGrid, keyHistory, outputText, selectionList);
+      return new ActivityMainBinding((RelativeLayout) rootView, ambigText, btn0, btn1, btn2, btn3,
+          btn4, btn5, btn6, btn7, centerLabel, keyGrid, menuButton, outputText, selectionList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

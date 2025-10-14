@@ -1,6 +1,14 @@
 [
     {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-mergeDebugResources-30:/layout/activity_settings.xml",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/layout/activity_settings.xml"
+    },
+    {
         "merged": "com.justtype.nativeapp-mergeDebugResources-30:/layout/activity_main.xml",
         "source": "com.justtype.nativeapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/layout/activity_main.xml"
     }
 ]

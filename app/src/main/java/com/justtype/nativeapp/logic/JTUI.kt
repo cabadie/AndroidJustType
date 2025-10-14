@@ -50,6 +50,9 @@ class JTUI(
     private val assets: AssetManager,
 ) {
     private val wld = WLD()
+    
+    // Preference for showing word frequencies
+    var showWordFrequencies: Boolean = false
 
     // Pages
     data class KeyDef(
@@ -269,7 +272,11 @@ class JTUI(
                 selectionListBuffer = selectionList.joinToString(separator = "\n") { item ->
                     val disp = (item["display"] ?: item["output"]) as String
                     val ind = if (selectionList.indexOf(item) == state.currentSelection) ">" else " "
-                    "${ind} ${disp}  ${(item["countOfOccurrence"] ?: 0) as Int} ${(item["type"] ?: "")} ${(item["POS"] ?: "")}"
+                    if (showWordFrequencies) {
+                        "${ind} ${disp}  ${(item["countOfOccurrence"] ?: 0) as Int} ${(item["type"] ?: "")} ${(item["POS"] ?: "")}"
+                    } else {
+                        "${ind} ${disp}"
+                    }
                 },
                 keyHistoryBuffer = keyHist,
                 centerSpace = state.currentPage,

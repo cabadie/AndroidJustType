@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.13.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f5e91bcdc09ba2865a80e399c0d03640/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:3:5-16:19
+17-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:3:5-20:19
 18        android:allowBackup="true"
 18-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,92 +33,100 @@
 23-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:4:9-33
 24        android:supportsRtl="true"
 24-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:7:9-35
-25        android:testOnly="true"
-26        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" >
-26-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:8:9-77
-27        <activity
-27-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:9:9-15:20
-28            android:name="com.justtype.nativeapp.MainActivity"
-28-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:9:19-47
-29            android:exported="true" >
-29-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:10:13-36
-30            <intent-filter>
-30-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:11:13-14:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:12:17-69
-31-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:12:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:13:17-77
-33-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:13:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <provider
-37-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-38            android:name="androidx.startup.InitializationProvider"
-38-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
-39            android:authorities="com.justtype.nativeapp.androidx-startup"
-39-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
-40            android:exported="false" >
-40-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
-41            <meta-data
-41-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-42-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
-43                android:value="androidx.startup" />
-43-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
-44            <meta-data
-44-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/04de17ce69dfc84e96bc48b0242983cc/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-45-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/04de17ce69dfc84e96bc48b0242983cc/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-46                android:value="androidx.startup" />
-46-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/04de17ce69dfc84e96bc48b0242983cc/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-47            <meta-data
-47-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-48                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-48-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-49                android:value="androidx.startup" />
-49-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-50        </provider>
-51
-52        <receiver
-52-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-53            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-53-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-54            android:directBootAware="false"
-54-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-55            android:enabled="true"
-55-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-56            android:exported="true"
-56-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-57            android:permission="android.permission.DUMP" >
-57-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-58            <intent-filter>
-58-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-59                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-60            </intent-filter>
-61            <intent-filter>
-61-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-62                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-62-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-62-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-63            </intent-filter>
-64            <intent-filter>
-64-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-65                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-66            </intent-filter>
-67            <intent-filter>
-67-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-68                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-69            </intent-filter>
-70        </receiver>
-71    </application>
-72
-73</manifest>
+25        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" >
+25-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:8:9-77
+26        <activity
+26-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:9:9-15:20
+27            android:name="com.justtype.nativeapp.MainActivity"
+27-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:9:19-47
+28            android:exported="true" >
+28-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:10:13-36
+29            <intent-filter>
+29-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:11:13-14:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:12:17-69
+30-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:12:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:13:17-77
+32-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:13:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:16:9-19:20
+36            android:name="com.justtype.nativeapp.SettingsActivity"
+36-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:16:19-51
+37            android:exported="false"
+37-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:17:13-37
+38            android:parentActivityName="com.justtype.nativeapp.MainActivity" >
+38-->/Users/ceciliaabadie/DevAdventures/JustTypeDemo-main/android/JustTypeNative/app/src/main/AndroidManifest.xml:18:13-55
+39        </activity>
+40
+41        <provider
+41-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+42            android:name="androidx.startup.InitializationProvider"
+42-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+43            android:authorities="com.justtype.nativeapp.androidx-startup"
+43-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+44            android:exported="false" >
+44-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+45            <meta-data
+45-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+46-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+47                android:value="androidx.startup" />
+47-->[androidx.emoji2:emoji2:1.3.0] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/f11e632781c5582ee44241674404dcc9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+48            <meta-data
+48-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/04de17ce69dfc84e96bc48b0242983cc/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+49-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/04de17ce69dfc84e96bc48b0242983cc/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+50                android:value="androidx.startup" />
+50-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/04de17ce69dfc84e96bc48b0242983cc/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+52-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+53                android:value="androidx.startup" />
+53-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+54        </provider>
+55
+56        <receiver
+56-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+57            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+57-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+58            android:directBootAware="false"
+58-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+59            android:enabled="true"
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+60            android:exported="true"
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+61            android:permission="android.permission.DUMP" >
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+62            <intent-filter>
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+63                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+64            </intent-filter>
+65            <intent-filter>
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+66                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+67            </intent-filter>
+68            <intent-filter>
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+69                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+70            </intent-filter>
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+72                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ceciliaabadie/.gradle/caches/9.0-milestone-1/transforms/620fc287fb47ab2eb39aec31e286efe7/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+73            </intent-filter>
+74        </receiver>
+75    </application>
+76
+77</manifest>
