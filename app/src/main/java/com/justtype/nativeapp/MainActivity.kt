@@ -38,7 +38,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             findViewById<Button>(R.id.btn5),
             findViewById<Button>(R.id.btn6),
             findViewById<Button>(R.id.btn7)
-        )
+        ).onEach { btn ->
+            btn.typeface = android.graphics.Typeface.MONOSPACE
+            btn.textAlignment = android.view.View.TEXT_ALIGNMENT_CENTER
+        }
 
         jtui = JTUI(
             say = { text -> speak(text) },

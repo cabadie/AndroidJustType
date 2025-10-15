@@ -363,10 +363,29 @@ class JTUI(
 
     private fun definePages() {
         // The labels are simplified to single strings; behavior is kept.
+        fun toGridLabels(text: String): List<String> {
+            val chars = text.toCharArray().map { it.toString() }
+            val grid = MutableList(9) { "" }
+            // Always keep the middle column empty (indices 1,4,7)
+            // If 4 or fewer chars, keep the entire middle row empty as well (indices 3,4,5)
+            val fillPositions = if (chars.size <= 4) {
+                listOf(0, 2, 6, 8) // corners only
+            } else {
+                listOf(0, 2, 3, 5, 6, 8) // corners + middle row edges
+            }
+            var cIdx = 0
+            for (pos in fillPositions) {
+                if (cIdx >= chars.size) break
+                grid[pos] = chars[cIdx]
+                cIdx += 1
+            }
+            return grid
+        }
+
         fun ambig(display: String, keyNum: Int, singleKeyPages: List<String> = emptyList()): KeyDef =
             KeyDef(
-                label = null,
-                singleLabel = display,
+                label = toGridLabels(display),
+                singleLabel = null,
                 display = display,
                 functions = listOf(KF_Term to null, KF_Ambig to keyNum),
                 singleKeyPages = singleKeyPages
