@@ -60,12 +60,12 @@
         "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_launcher_background.xml"
-    },
-    {
         "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -88,6 +88,10 @@
         "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/drawable/menu_24.xml"
     },
     {
+        "merged": "com.justtype.nativeapp-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.justtype.nativeapp-main-33:/layout/activity_main.xml"
+    },
+    {
         "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/layout_activity_settings.xml.flat",
         "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/layout/activity_settings.xml"
     },
@@ -106,9 +110,5 @@
     {
         "merged": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/ceciliaabadie/.gradle/daemon/9.0-milestone-1/com.justtype.nativeapp-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "com.justtype.nativeapp-debug-31:/drawable_button_background.xml.flat",
-        "source": "com.justtype.nativeapp-main-33:/drawable/button_background.xml"
     }
 ]
