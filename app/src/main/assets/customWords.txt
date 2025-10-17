@@ -2,4 +2,3 @@
 Kwis;1000;NNP
 JustType;1000;NNP
 Kwis;1000;NNP
-i;500000;PRP;I

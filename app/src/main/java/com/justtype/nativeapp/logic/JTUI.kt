@@ -249,6 +249,10 @@ class JTUI(
             state.outputString + (selectionList[state.currentSelection!!]["output"] as String)
         } else state.outputString
 
+        val centerPreview = if (state.currentSelection != null && selectionList.getOrNull(state.currentSelection!!)?.get("type") in listOf("X","L","E","2")) {
+            (selectionList[state.currentSelection!!]["output"] as String)
+        } else null
+
         val keyHist = buildString {
             var first = true
             state.keyHistory.forEach { k ->
@@ -279,7 +283,7 @@ class JTUI(
                     }
                 },
                 keyHistoryBuffer = keyHist,
-                centerSpace = state.currentPage,
+                centerSpace = centerPreview ?: state.currentPage,
                 keyLabels = keyLabels
             )
         )
@@ -405,6 +409,17 @@ class JTUI(
             ambig("OJHDVX", 5, listOf("Navigation")),
         )
 
+         val mainAlpha = listOf(
+            ambig("ABCD", 0, listOf("Spelling")),
+            btn("Undo", KF_Undo to null),
+            ambig("EFGH", 1, listOf("Symbols1", "Symbols2", "Symbols3")),
+            ambig("IJKLM", 2),
+            ambig("RSTUV", 4),
+            ambig("NOPQ", 3, listOf("Functions1", "Functions2")),
+            btn("Sel", KF_Select to null),
+            ambig("WXYZ", 5, listOf("Navigation")),
+        )
+        
         val symbols1 = listOf(
             btn("SymMode", KF_SymbolMode to 0),
             btn("Undo", KF_Undo to null),
@@ -516,7 +531,7 @@ class JTUI(
         )
 
         pages.clear()
-        pages["Main"] = main
+        pages["Main"] = mainAlpha
         pages["Symbols1"] = symbols1
         pages["Symbols2"] = symbols2
         pages["Symbols3"] = symbols3
