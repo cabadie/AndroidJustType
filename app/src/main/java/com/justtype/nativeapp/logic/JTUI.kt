@@ -362,7 +362,15 @@ class JTUI(
     private fun wldSelection(): List<Map<String, Any?>> {
         val keys = ambigKeySequenceNumbers()
         val list = wld.getDisambiguationList(keys)
-        return list.sortedByDescending { it["countOfOccurrence"] as Int }
+        return list.sortedWith(
+            compareBy<Map<String, Any?>> {
+                // Primary: shorter words first
+                (it["output"] as? String)?.length ?: Int.MAX_VALUE
+            }.thenByDescending {
+                // Secondary: higher frequency first
+                (it["countOfOccurrence"] as? Int) ?: 0
+            }
+        )
     }
 
     private fun definePages() {
@@ -531,7 +539,7 @@ class JTUI(
         )
 
         pages.clear()
-        pages["Main"] = mainAlpha
+        pages["Main"] = main
         pages["Symbols1"] = symbols1
         pages["Symbols2"] = symbols2
         pages["Symbols3"] = symbols3
