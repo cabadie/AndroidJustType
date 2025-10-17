@@ -100,6 +100,14 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         
         val showButtonsPressed = prefs.getBoolean(SettingsActivity.KEY_SHOW_BUTTONS_PRESSED, false)
         ambigTextView.visibility = if (showButtonsPressed) View.VISIBLE else View.GONE
+
+        // Apply layout mode
+        val layoutPref = prefs.getString(SettingsActivity.KEY_LAYOUT_MODE, SettingsActivity.MODE_ALPHA)
+        val mode = if (layoutPref == SettingsActivity.MODE_ALPHA)
+            com.justtype.nativeapp.logic.LayoutMode.Alphabetical
+        else
+            com.justtype.nativeapp.logic.LayoutMode.Optimized
+        jtui.setLayoutMode(mode)
     }
 
     private fun speak(text: String) {

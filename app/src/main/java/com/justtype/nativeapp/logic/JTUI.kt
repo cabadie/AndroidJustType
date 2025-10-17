@@ -34,6 +34,11 @@ private const val KF_SaveLast = 21
 
 private const val StartingPage = "Main"
 
+private val lettersPerKeyOptimized = listOf("me'gz", "trp-", "iskw", "lufcy", "banq", "ojhdvx")
+private val lettersPerKeyAlpha = listOf("abcd", "ef'gh", "ijklm", "nopq", "rstuv", "wxyz")
+
+enum class LayoutMode { Alphabetical, Optimized }
+
 // UI snapshot for binding
 data class JTUISnapshot(
     val outputBuffer: String,
@@ -49,7 +54,8 @@ class JTUI(
     private val onUiUpdate: (JTUISnapshot) -> Unit,
     private val assets: AssetManager,
 ) {
-    private val wld = WLD()
+    var layoutMode: LayoutMode = LayoutMode.Alphabetical
+    private var wld = WLD(lettersPerKeyAlpha)
     
     // Preference for showing word frequencies
     var showWordFrequencies: Boolean = false
@@ -89,6 +95,16 @@ class JTUI(
         loadWordListFromAssets("pwl_clean.txt", "avoidWords.txt")
         loadWordListFromAssets("customWords.txt", null, optional = true)
 
+        definePages()
+        updateKeysAndSelection()
+    }
+
+    fun setLayoutMode(mode: LayoutMode) {
+        if (layoutMode == mode) return
+        layoutMode = mode
+        wld = WLD(if (mode == LayoutMode.Alphabetical) lettersPerKeyAlpha else lettersPerKeyOptimized)
+        loadWordListFromAssets("pwl_clean.txt", "avoidWords.txt")
+        loadWordListFromAssets("customWords.txt", null, optional = true)
         definePages()
         updateKeysAndSelection()
     }
@@ -420,12 +436,12 @@ class JTUI(
          val mainAlpha = listOf(
             ambig("ABCD", 0, listOf("Spelling")),
             btn("Undo", KF_Undo to null),
-            ambig("EFGH", 1, listOf("Symbols1", "Symbols2", "Symbols3")),
+            ambig("EF'GH", 1, listOf("Symbols1", "Symbols2", "Symbols3")),
             ambig("IJKLM", 2),
             ambig("RSTUV", 4),
             ambig("NOPQ", 3, listOf("Functions1", "Functions2")),
             btn("Sel", KF_Select to null),
-            ambig("WXYZ", 5, listOf("Navigation")),
+            ambig("WX-YZ", 5, listOf("Navigation")),
         )
         
         val symbols1 = listOf(
@@ -539,7 +555,7 @@ class JTUI(
         )
 
         pages.clear()
-        pages["Main"] = main
+        pages["Main"] = if (layoutMode == LayoutMode.Alphabetical) mainAlpha else main
         pages["Symbols1"] = symbols1
         pages["Symbols2"] = symbols2
         pages["Symbols3"] = symbols3

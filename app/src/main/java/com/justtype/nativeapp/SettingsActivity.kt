@@ -5,6 +5,8 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 
@@ -14,6 +16,9 @@ class SettingsActivity : AppCompatActivity() {
         const val PREFS_NAME = "JustTypePrefs"
         const val KEY_SHOW_WORD_FREQUENCIES = "show_word_frequencies"
         const val KEY_SHOW_BUTTONS_PRESSED = "show_buttons_pressed"
+        const val KEY_LAYOUT_MODE = "layout_mode"
+        const val MODE_ALPHA = "alpha"
+        const val MODE_OPT = "opt"
     }
     
     private lateinit var sharedPreferences: SharedPreferences
@@ -29,6 +34,9 @@ class SettingsActivity : AppCompatActivity() {
         val wordFrequenciesLayout: LinearLayout = findViewById(R.id.wordFrequenciesLayout)
         val showButtonsPressedSwitch: SwitchCompat = findViewById(R.id.showButtonsPressedSwitch)
         val showButtonsPressedLayout: LinearLayout = findViewById(R.id.showButtonsPressedLayout)
+        val layoutRadioGroup: RadioGroup = findViewById(R.id.layoutRadioGroup)
+        val layoutAlphaRadio: RadioButton = findViewById(R.id/layoutAlphaRadio)
+        val layoutOptRadio: RadioButton = findViewById(R.id/layoutOptRadio)
         
         // Load saved preferences (default is false - debug info hidden)
         val showWordFrequencies = sharedPreferences.getBoolean(KEY_SHOW_WORD_FREQUENCIES, false)
@@ -36,6 +44,9 @@ class SettingsActivity : AppCompatActivity() {
         
         val showButtonsPressed = sharedPreferences.getBoolean(KEY_SHOW_BUTTONS_PRESSED, false)
         showButtonsPressedSwitch.isChecked = showButtonsPressed
+        val layoutSaved = sharedPreferences.getString(KEY_LAYOUT_MODE, MODE_ALPHA)
+        layoutAlphaRadio.isChecked = layoutSaved == MODE_ALPHA
+        layoutOptRadio.isChecked = layoutSaved == MODE_OPT
         
         // Handle back button click
         backButton.setOnClickListener {
@@ -64,6 +75,12 @@ class SettingsActivity : AppCompatActivity() {
         // Handle show buttons pressed layout click to toggle switch
         showButtonsPressedLayout.setOnClickListener {
             showButtonsPressedSwitch.isChecked = !showButtonsPressedSwitch.isChecked
+        }
+
+        // Handle layout selection
+        layoutRadioGroup.setOnCheckedChangeListener { _, checkedId ->
+            val value = if (checkedId == R.id.layoutAlphaRadio) MODE_ALPHA else MODE_OPT
+            sharedPreferences.edit().putString(KEY_LAYOUT_MODE, value).apply()
         }
     }
 }

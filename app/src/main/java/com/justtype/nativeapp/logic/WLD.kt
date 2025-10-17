@@ -2,13 +2,13 @@ package com.justtype.nativeapp.logic
 
 import java.util.Locale
 
-class WLD {
+class WLD(
+    private val lettersPerKey: List<String> = listOf("me'gz", "trp-", "iskw", "lufcy", "banq", "ojhdvx")
+) {
     private val symbolKeys = 6
     private val letterToKey = IntArray(256) { -1 }
 
     init {
-        // Default layout letters per key derived from Kivy main page (approximation)
-        val lettersPerKey = listOf("me'gz", "trp-", "iskw", "lufcy", "banq", "ojhdvx")
         var keyNumber = 0
         lettersPerKey.forEach { keys ->
             keys.forEach { ch ->

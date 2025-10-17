@@ -153,6 +153,46 @@
                 android:layout_height="1dp"
                 android:background="#E0E0E0" />
 
+            <!-- Layout Category Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Layout"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/layoutRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/layoutAlphaRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alphabetical"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+
+                <RadioButton
+                    android:id="@+id/layoutOptRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Optimized"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+            </RadioGroup>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
         </LinearLayout>
     </ScrollView>
 
