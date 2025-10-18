@@ -65,7 +65,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn0"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                  android:background="@drawable/button_background"
@@ -76,7 +76,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                  android:background="@drawable/button_background"
@@ -87,7 +87,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn2"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:background="@drawable/button_background"
@@ -98,7 +98,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn3"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                  android:background="@drawable/button_background"
@@ -109,7 +109,7 @@
             <com.justtype.nativeapp.ui.SquareTextView
                 android:id="@+id/centerLabel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
@@ -117,7 +117,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn5"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                  android:background="@drawable/button_background"
@@ -128,7 +128,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn4"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                  android:background="@drawable/button_background"
@@ -139,7 +139,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn6"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                  android:background="@drawable/button_background"
@@ -150,7 +150,7 @@
             <com.justtype.nativeapp.ui.SquareButton
                 android:id="@+id/btn7"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:background="@drawable/button_background"

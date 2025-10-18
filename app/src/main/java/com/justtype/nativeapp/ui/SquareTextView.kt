@@ -10,8 +10,8 @@ class SquareTextView @JvmOverloads constructor(
     defStyleAttr: Int = android.R.attr.textViewStyle
 ) : AppCompatTextView(context, attrs, defStyleAttr) {
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        super.onMeasure(widthMeasureSpec, widthMeasureSpec)
-        val size = measuredWidth
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+        val size = kotlin.math.min(measuredWidth, measuredHeight)
         setMeasuredDimension(size, size)
     }
 }

@@ -16,9 +16,9 @@ class SquareButton @JvmOverloads constructor(
         gravity = Gravity.CENTER
     }
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        // Measure using width for both dimensions to enforce a square
-        super.onMeasure(widthMeasureSpec, widthMeasureSpec)
-        val size = measuredWidth
+        // Measure normally to get both width and height constraints
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+        val size = kotlin.math.min(measuredWidth, measuredHeight)
         setMeasuredDimension(size, size)
     }
 }
