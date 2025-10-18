@@ -9,6 +9,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
+import com.justtype.nativeapp.R
 
 class SettingsActivity : AppCompatActivity() {
     
@@ -35,8 +36,8 @@ class SettingsActivity : AppCompatActivity() {
         val showButtonsPressedSwitch: SwitchCompat = findViewById(R.id.showButtonsPressedSwitch)
         val showButtonsPressedLayout: LinearLayout = findViewById(R.id.showButtonsPressedLayout)
         val layoutRadioGroup: RadioGroup = findViewById(R.id.layoutRadioGroup)
-        val layoutAlphaRadio: RadioButton = findViewById(R.id/layoutAlphaRadio)
-        val layoutOptRadio: RadioButton = findViewById(R.id/layoutOptRadio)
+        val layoutAlphaRadio: RadioButton = findViewById(R.id.layoutAlphaRadio)
+        val layoutOptRadio: RadioButton = findViewById(R.id.layoutOptRadio)
         
         // Load saved preferences (default is false - debug info hidden)
         val showWordFrequencies = sharedPreferences.getBoolean(KEY_SHOW_WORD_FREQUENCIES, false)

@@ -55,6 +55,15 @@ class JTUI(
     private val assets: AssetManager,
 ) {
     var layoutMode: LayoutMode = LayoutMode.Alphabetical
+        set(value) {
+            if (field == value) return
+            field = value
+            wld = WLD(if (value == LayoutMode.Alphabetical) lettersPerKeyAlpha else lettersPerKeyOptimized)
+            loadWordListFromAssets("pwl_clean.txt", "avoidWords.txt")
+            loadWordListFromAssets("customWords.txt", null, optional = true)
+            definePages()
+            updateKeysAndSelection()
+        }
     private var wld = WLD(lettersPerKeyAlpha)
     
     // Preference for showing word frequencies
@@ -95,16 +104,6 @@ class JTUI(
         loadWordListFromAssets("pwl_clean.txt", "avoidWords.txt")
         loadWordListFromAssets("customWords.txt", null, optional = true)
 
-        definePages()
-        updateKeysAndSelection()
-    }
-
-    fun setLayoutMode(mode: LayoutMode) {
-        if (layoutMode == mode) return
-        layoutMode = mode
-        wld = WLD(if (mode == LayoutMode.Alphabetical) lettersPerKeyAlpha else lettersPerKeyOptimized)
-        loadWordListFromAssets("pwl_clean.txt", "avoidWords.txt")
-        loadWordListFromAssets("customWords.txt", null, optional = true)
         definePages()
         updateKeysAndSelection()
     }

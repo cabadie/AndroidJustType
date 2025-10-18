@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             com.justtype.nativeapp.logic.LayoutMode.Alphabetical
         else
             com.justtype.nativeapp.logic.LayoutMode.Optimized
-        jtui.setLayoutMode(mode)
+        jtui.layoutMode = mode
     }
 
     private fun speak(text: String) {
