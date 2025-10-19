@@ -67,7 +67,10 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         jtui.init()
 
         buttons.forEachIndexed { index, button ->
-            button.setOnClickListener { jtui.buttonPressed(index) }
+            button.setOnClickListener {
+                jtui.buttonPressed(index)
+                flashButton(button)
+            }
         }
         
         // Setup hamburger menu button
@@ -138,6 +141,34 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             GamepadDirectionDetector.Direction.DOWN_RIGHT -> 7 // bottom-right
         }
         jtui.buttonPressed(index)
+        val btnId = when (index) {
+            0 -> R.id.btn0
+            1 -> R.id.btn1
+            2 -> R.id.btn2
+            3 -> R.id.btn3
+            4 -> R.id.btn4
+            5 -> R.id.btn5
+            6 -> R.id.btn6
+            else -> R.id.btn7
+        }
+        val btn = findViewById<Button>(btnId)
+        flashButton(btn)
+    }
+
+    private fun flashButton(button: Button) {
+        // Backup original
+        val originalBg = button.background
+        val originalScaleX = button.scaleX
+        val originalScaleY = button.scaleY
+        // Apply highlight background and scale up a bit
+        button.setBackgroundResource(R.drawable.button_background_highlight)
+        button.animate().scaleX(1.08f).scaleY(1.08f).setDuration(50).withEndAction {
+            // Restore after a short delay
+            button.postDelayed({
+                button.background = originalBg
+                button.animate().scaleX(originalScaleX).scaleY(originalScaleY).setDuration(70).start()
+            }, 80)
+        }.start()
     }
 
     override fun onGenericMotionEvent(event: MotionEvent): Boolean {
